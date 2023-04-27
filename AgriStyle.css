@@ -273,6 +273,11 @@
     width: 40%;
   }
 
+  section.service .container h1 {
+    font-size: 2.6rem;
+    margin: 2rem auto 3rem;
+  }
+
   section.service form {
     margin-top: 3rem;
   }
@@ -348,6 +353,74 @@
     transition: var(--transition);
     
   }
+
+/* PROJECT SECTION */
+section.project {
+  background: var(--color-9);
+  color: var(--color-3);
+}
+
+/* section.project .container {
+  display: grid;
+  grid-template-columns: 26rem auto;
+  gap: 5rem;
+}
+
+section.project .container .swiper {
+  height: 105%;
+  width: 105%;
+}
+
+section.project .container .swiper-wrapper {
+  height: 75%;
+  width: 90%;
+}
+
+section.project .container .swiper-scrollbar {
+  background: var(--color-6);
+  transition: var(--transition);
+}
+
+section.project .container .swiper-scrollbar:hover {
+  height: 0.8rem;
+}
+section.project .container .swiper-scrollbar-drag {
+  background: var(--color-5);
+  transition: var(--transition);
+}
+
+
+section.project .aboutimg {
+  border-radius: 2.5%;
+  transition: var(--transition);
+} */
+
+section.project h1 {
+  color: var(--color-3);
+}
+
+section.project img {
+  width: 40%;
+  float: right;
+  box-shadow: 0.5rem 0.5rem 0.5rem var(--color-5);
+  color: var(--color-4);
+}
+
+section.project p {
+  width: 50%;
+  margin: 1rem 2rem 1rem 2rem;
+}
+
+section.project .btn {
+  margin: 5rem 12rem 2rem ;
+  transition: var(--transition);
+}
+
+section.project .btn:hover {
+  box-shadow: 0.5rem 0.5rem 0.5rem var(--color-4);
+  text-align: center;
+  color: var(--color-4);
+}
 
 /*CONTACT SECTION*/
 

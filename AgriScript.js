@@ -192,6 +192,14 @@ async function Form1() {
     }
 }
 
+//swiper js
+const swiper = new Swiper('.swiper', {
+    scrollbar: {
+      el: '.swiper-scrollbar',
+      draggable: true,
+    },
+  });
+
 // /* animation: bgchange 30s forwards infinite; */
 // animation-name: bgchange;
 // /* animation-direction: alternate; */
