@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriGate</title>
+
+    <!--STLYESHEET-->
+    <link rel="stylesheet" href="AgriStyle.css">
+
+    <!--MATERIAL ICONS CDN-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+</head>
+
+<body onload="CrpSelGen()">   
+    <nav>
+        <div class="container">
+            <a href="#"><h3>AgriGate<span class="material-symbols-rounded">agriculture</span></h3></a>
+                <!-- <h3><span class="material-symbols-rounded">expand_more</span></h3> -->
+            <ul>
+                <li><a href="#" class="active">
+                    <span class="material-symbols-rounded">home</span><br><br>Home</a></li>
+                <li><a href="#service">
+                    <span class="material-symbols-rounded">star</span><br><br>Service</a></li>
+                <li><a href="#project">
+                    <span class="material-symbols-rounded">info</span><br><br>Project</a></li>                
+                <li><a href="#contact">
+                    <span class="material-symbols-rounded">call</span><br><br>Contact Us?</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- END OF NAVIGATION PANE-->
+
+    <Section class="home" id="home">
+        <div class="over">
+            <div class="container">
+                <h1>AgriGate</h1>
+                <h3>Better Agricultural Results,<br>For a better tomorrow</h3>
+            </div>
+        </div>
+    </Section>
+    <!-- END OF HOME SECTION -->
+
+    <section class="service" id="service">
+        <div class = "container">
+            <form action="#" method="POST" id="phpForm">
+                <label for="crop_year">Crop Year:</label>
+                <select placeholder="YYYY" min="1997" max="2030"  id="crop_year" name="crop_year" required></select><br><br>
+                
+                <label for="area">Area (in hectares):</label>
+                <input type="number" id="area" name="area" required><br><br>
+                
+                <label for="temperature">Temperature (in °Celsius):</label>
+                <input type="number" id="temperature" name="temperature" required><br><br>
+                
+                <label for="precipitation">Precipitation (in mm):</label>
+                <input type="number" id="precipitation" name="precipitation" required><br><br>
+
+                <label for="humidity">Humidity (in %):</label>
+                <input type="number" id="humidity" name="humidity" required><br><br>
+
+                <label for="districts">Districts:</label>
+                <select id="districts" name="districts" required></select><br><br>
+
+                <label for="season">Season:</label>
+                <select id="season" name="season" required></select><br><br>
+                
+                <label for="soil-type">Soil Type:</label>
+                <select id="soil-type" name="soil-type" required></select><br><br>
+
+                <label for="crop">Crop:</label>
+                <select id="crop" name="crop" required></select><br><br>
+
+                <input type="submit" name="Submit" value="Submit" onclick="Form1()" class="btn btn-primary"><br><br>
+                
+                <br>
+                <p>Results:</p>
+                <br>
+                
+                <label for="yield1">Tab Transformer Yield:</label>
+                <output type="text" name="yield1" id="yield1"></output><br><br>
+                
+                <label for="yield2">Multi-Modal Bert Yield:</label>
+                <output type="text" name="yield2" id="yield2"></output><br><br>
+
+                <label for="yield3">Transformers Stacking Yield:</label>
+                <output type="text" name="yield3" id="yield3"></output><br><br>
+
+                <label for="yield4">Random Forest Yield:</label>
+                <output type="text" name="yield4" id="yield4"></output><br><br>
+
+                <label for="yield5">ANN Yield:</label>
+                <output type="text" name="yield5" id="yield5"></output><br><br>
+
+                <label for="yield6">RF-ANN Stacking Yield:</label>
+                <output type="text" name="yield6" id="yield6"></output>
+            </form>
+        </div>
+    </section>
+    <!-- END OF SERVICE SECTION -->
+
+    <Section class="project" id="project">
+        <div class="container">
+
+        </div>
+    </Section>
+    <!-- END OF PROJECT SECTION -->
+
+    <Section class="contact" id="contact">
+        <div class="over">
+            <div class="container">
+                <h1>Contact Us!</h1>
+                <h3><b>We welcome your feedback,<br> Please fill the form below:</b></h3>
+                <form action="https://formspree.io/f/mdobywwn" method="POST">
+                    <!--ACTION AND POST Methods to be done-->
+                    <input type="text" name="Name" placeholder="Name" required>
+                    <input type="text" name="Email" placeholder="Email" required>
+                    <input type="text" name="Subject" placeholder="Subject" required>
+                    <textarea name="Message" placeholder="Message" required></textarea>
+                    <input type="submit" name="Submit" class="btn btn-primary">
+                </form>
+            </div>
+        </div>
+    </Section>
+
+    <script src="AgriScript.js"></script>
+    <!--END OF SCRIPT TAGS-->
+
+</body>
+
+</html>

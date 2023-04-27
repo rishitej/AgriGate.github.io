@@ -1,0 +1,465 @@
+/*ROOT VARIABLES*/
+:root {
+    --color-4: #d9f6ce;
+    --color-3: #f4f4f4;
+    --color-2: #525252;
+    --color-1: #141415;
+    --color-5: #55ce18;
+    --color-6: hsla(100, 100%, 50%, 0.711);
+    --color-7: #29f5ae;
+    --color-8: #ffce31;
+    --color-9: #125f2f;
+    --color-10: hsla(100, 100%, 50%, 0.355);
+    --color-12: hsla(71, 100%, 50%, 0.355);
+  
+    --transition: all 300ms ease;
+    --tansit: all 2s ease;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 10px;
+    background: var(--color-6);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-5);
+  }
+  
+  html {
+    font-size: 15px;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: var(--color-4);
+    color: var(--color-1);
+    max-width: 100vw;
+    cursor: default;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: var(--color-1);
+    line-height: 1.2;
+  }
+  
+  h1 {
+    font-size: 3.8rem;
+  }
+  
+  h2 {
+    font-size: 2.6rem;
+  }
+  
+  h3 {
+    font-size: 1.6rem;
+  }
+  
+  h4 {
+    font-size: 1.2rem;
+  }
+  
+  h5 {
+    font-size: 0.86rem;
+  }
+  
+  p {
+    line-height: 2;
+  }
+  
+  a{
+    color: var(--color-5);
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  section {
+    padding: 10rem 0 7rem;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+  
+  section h1 {
+    text-align: center;
+    display: block;
+    margin-bottom: 5rem;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  .btn {
+    padding: 1.4rem 3.4rem;
+    font-size: 1.1rem;
+    border-radius: 10%;
+    color: var(--color-1);
+    background: var(--color-4);
+    display: inline-block;
+    margin: 2rem 0;
+    transition: var(--transition);
+  }
+  
+  .btn:hover {
+    box-shadow: 0 2rem 2 rem var(--color-6);
+  }
+  
+  .btn-primary {
+    background: var(--color-5);
+    color: var(--color-1);
+  }
+  
+  /* NAVBAR */
+  
+  nav {
+    width: 6rem;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: var(--color-4);
+  }
+  
+  nav .container {
+    position: fixed;
+    width: 1rem;
+    /* height: 100%; */
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+  
+  nav h3 {
+    width: 12rem;
+    height: 10%;
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 1rem 1.5rem 0 1rem;
+    color: var(--color-5);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--color-5);
+    box-shadow: 0.1rem 0rem 0.5rem var(--color-6);
+  }
+
+  /* nav h3 {
+    margin: 0;
+    padding: 0rem 0.5rem 0;
+    color: var(--color-5);
+    display: flex;
+  } */
+  
+  nav .container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 5rem;
+    height: 100%;
+    overflow: auto;
+    box-shadow: 0.1rem 0.5rem 0.5rem var(--color-6);
+  }
+
+  nav .container li {
+    text-align: center;
+    border: 1px solid var(--color-6);
+    /* border-bottom: 1px var(--color-6); */
+  }
+
+  
+  nav .container ul li a {
+    height: 25%;
+    display: block;
+    /* height: 20%; */
+    width: 100%;
+    padding: 1rem 1rem;
+    /* display: block; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-decoration: none;
+    background-color: var(--color-10);
+    color: var(--color-1);
+    /* position: relative; */
+    /* transition: var(--transition); */
+  }
+  
+  nav .container ul li a:hover {
+    background: var(--color-9);
+    color: var(--color-5);
+  }
+  
+  nav .container ul li a.active {
+    background: var(--color-5);
+    color: var(--color-4);
+  }
+  
+  /* Home Page */
+  section.home {
+    overflow: hidden;
+    padding: 0;
+    max-width: 100vw;
+    background-image: url(AgrImg/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: var(--transit);
+    
+    animation-name: bgchange;
+    animation-duration: 30 s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+  }
+
+  section.home .over {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    /* backdrop-filter: blur(5px); */
+    padding: 20rem 0 25rem;
+  }
+
+  section.home .container{
+    width: 50%;
+    height: 50%;
+    padding: 1rem;
+    backdrop-filter: blur(5px);
+  }
+
+  section.home .container h1{
+    color: var(--color-4);
+    padding: 1rem auto 2rem;
+    margin: 0 auto 2rem;
+  }
+
+  section.home .container h3{
+    text-align: center;
+    padding: 1rem auto 2rem;
+    margin: 0;
+    color: var(--color-4);
+  }
+
+
+  /* Service Section */
+
+  section.service {
+    padding: 0;
+    margin: 1rem 1rem 1rem;
+    max-width: 100vw;
+  }
+
+  section.service .over {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10rem 0 7rem;
+  }
+
+  section.service .container {
+    width: 40%;
+  }
+
+  section.service form {
+    margin-top: 3rem;
+  }
+
+  section.service form select {
+    float: right;
+    width: 40%;
+    margin: 0rem 5rem 0rem 5rem;
+    padding: 0 1.5rem;
+    background: transparent;
+    border: 1px solid var(--color-2);
+    border-radius: 2rem;
+    transition: var(--transition);
+  }
+
+  section.service form select:focus {
+    background: var(--color-10);
+  }
+
+  section.service form select:hover {
+    width: 41.5%;
+    cursor: pointer;
+  }
+
+  section.service form input {
+    float: right;
+    width: 40%;
+    margin: 0rem 5rem 0rem 3rem;
+    padding: 0 1.5rem;
+    border: 1px solid var(--color-2);
+    border-radius: 2rem;
+    background: transparent;
+    color: var(--color-1);
+    transition: var(--transition);
+  }
+  
+  section.service form input:focus {
+    background: var(--color-10);
+    color: var(--color-2);
+  }
+
+  section.service form input:hover {
+    width: 41.5%;
+  }
+
+  section.service form .btn {
+    display: block;
+    float: none;
+    width: 9rem;
+    height: 3rem;
+    border: none;
+    background: var(--color-5);
+    margin: 2rem auto 0;
+    transition: var(--transition);
+  }
+  
+  section.service form .btn:hover {
+    background: var(--color-5);
+    color: var(--color-4);
+    cursor: pointer;
+    width: 10rem;
+  }
+
+  section.service form output {
+    float: right;
+    width: 40%;
+    height: 2rem;
+    margin: 0rem 5rem 0rem 3rem;
+    padding: 0.2rem 1.5rem;
+    border: 1px solid var(--color-2);
+    background: transparent;
+    color: var(--color-1);
+    transition: var(--transition);
+    
+  }
+
+/*CONTACT SECTION*/
+
+section.contact {
+  background: url("AgrImg/bg4.jpg") no-repeat center center/cover;
+  padding: 0;
+  max-width: 100vw;
+}
+
+section.contact .over {
+  width: 100%;
+  height: 100%;
+  /* background: hsla(0, 0%, 0%, 0.12); */
+  padding: 10rem 0 7rem;
+}
+
+section.contact .container {
+  width: 50%;
+}
+
+section.contact .container h1 {
+  backdrop-filter: blur(2px);
+  margin: 0;
+  color: var(--color-1);
+}
+
+section.contact .container h3 {
+  color: var(--color-1);
+  backdrop-filter: blur(2px);
+  margin-top: 1rem;
+}
+
+section.contact form {
+  margin-top: 3rem;
+}
+
+section.contact form input,
+section.contact form textarea {
+  backdrop-filter: blur(5px);
+  display: block;
+  width: 50%;
+  margin: 0.5rem 0;
+  padding: 1.6rem;
+  border: 1px solid var(--color-1);
+  border-radius: 1rem;
+  background: var(--color-12);
+  color: var(--color-1);
+  transition: var(--transition);
+}
+
+section.contact form textarea {
+  height: 7rem;
+}
+
+section.contact form input:focus,
+section.contact form textarea:focus {
+  background: var(--color-10);
+  color: var(--color-8);
+}
+
+section.contact form input::placeholder,
+section.contact form textarea::placeholder {
+  opacity: 1;
+  color: var(--color-4);
+}
+
+section.contact form .btn {
+  width: 12rem;
+  color: var(--color-1);
+  background: var(--color-5);
+  margin: 2rem 5rem 0 5rem;
+  transition: var(--transition);
+}
+
+section.contact form .btn:hover {
+  background: var(--color-5);
+  color: var(--color-4);
+  cursor: pointer;
+  width: 14rem;
+}
+  /* @keyframes bgchange {
+    0%{
+      background-image: url(AgrImg/bg1.jpg);
+    }
+    20%{
+      background-image: url(AgrImg/bg2.jpg);
+    }
+    40%{
+      background-image: url(AgrImg/bg3.jpg);
+    }
+    60%{
+      background-image: url(AgrImg/bg4.jpg);
+    }
+    80%{
+      background-image: url(AgrImg/bg5.jpg);
+    }
+    100%{
+      background-image: url(AgrImg/bg6.jpg);
+    }
+  } */
+
+  @keyframes bgchange {
+    0% {left:0px;}
+    10% {left:0px;}
+    20% {left:1200px;}
+    30% {left:1200px;}
+    40% {left:2400px;}
+    50% {left:2400px;}
+    60% {left:1200px;}
+    70% {left:1200px;}
+    80% {left:0px;}
+    90% {left:0px;}
+    100% {left:0px;}
+    
+  }
