@@ -110,7 +110,7 @@ async function Form1() {
         "Crop": document.getElementById("crop").value
     };
 
-    const response1 = await fetch("http://20.204.27.238:5000/tab-transformer-result", {
+    const response1 = await fetch("https://20.204.27.238:5000/tab-transformer-result", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -118,7 +118,7 @@ async function Form1() {
         body: JSON.stringify(data)
     });
 
-    const response2 = await fetch("http://20.204.27.238:5000/multimodal-bert-result", {
+    const response2 = await fetch("https://20.204.27.238:5000/multimodal-bert-result", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -126,7 +126,7 @@ async function Form1() {
         body: JSON.stringify(data)
     });
 
-    const response3 = await fetch("http://20.204.27.238:5000/attention-stacking-result", {
+    const response3 = await fetch("https://20.204.27.238:5000/attention-stacking-result", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -134,7 +134,7 @@ async function Form1() {
         body: JSON.stringify(data)
     });
 
-    const response4 = await fetch("http://20.204.27.238:5001/rf-result", {
+    const response4 = await fetch("https://20.204.27.238:5001/rf-result", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -142,7 +142,7 @@ async function Form1() {
         body: JSON.stringify(data)
     });
 
-    const response5 = await fetch("http://20.204.27.238:5001/ann-result", {
+    const response5 = await fetch("https://20.204.27.238:5001/ann-result", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -150,7 +150,7 @@ async function Form1() {
         body: JSON.stringify(data)
     });
 
-    const response6 = await fetch("http://20.204.27.238:5001/ann-rf-stacking-result", {
+    const response6 = await fetch("https://20.204.27.238:5001/ann-rf-stacking-result", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
